@@ -56,9 +56,13 @@ button{
     margin: 0.7%;
     background-color: rgb(129, 90, 113);
     color: rgb(215, 213, 224);
+    justify-content: center;
+   
 }
 button:hover {
-    font-size: 100%;;
+    font-size: 100%;
+  
+    
 }
 
 #esqueceu{
