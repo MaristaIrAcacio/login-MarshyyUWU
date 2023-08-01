@@ -36,7 +36,7 @@ input{
    width:250px;
    height:40px;
    transition: .1s;
-   background-color:rgb(122, 122, 122);;
+   background-color:rgb(155, 151, 151);;
    border: none;
    border-radius: 10px;
 }
@@ -71,3 +71,8 @@ button:hover {
     margin: 26.0%;
 }
 /*Imagens de login*/
+
+/*###########################*/
+
+#escrita{
+    color:rgb(155, 151, 151)}

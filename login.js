@@ -18,32 +18,32 @@ function Verificar(){
 var dadosLista = [];
 
 function salvarUser(){
-    let nomeUser = document.getElementById("nomeUser").value;
+    let nomeUser = document.getElementById("ProdutosInf").value;
 
     if(nomeUser){
         dadosLista.push(nomeUser);
         criarLista();
-        document.getElementById('nomeUser').value = '';
+        document.getElementById('ProdutosInf').value = '';
     }
 }
 
 /* FUNÇÃO PARA CRIAR LISTA DE USUÁRIO*/
 function criarLista(){
-    let tabela = document.getElementById('tabela').innerHTML =  "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
+    let tabela = document.getElementById('tabela').innerHTML =  "<tr id='escrita'><th>Produtos</th><th>Ações</th></tr>";
 
     for(let i = 0;i <= (dadosLista.length - 1);i++){
-        tabela+= "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='Editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onclick='Excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button></td></tr>";
+        tabela+= "<tr><td id='escrita'>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='Editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onclick='Excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button></td></tr>";
         document.getElementById('tabela').innerHTML = tabela;
     }
 }
 
-    /*FUNÇÃO PARA EDITAR NOME*/
+    /*FUNÇÃO PARA EDITAR PRODUTO*/
       function Editar(i){
-          document.getElementById('nomeUser').value = dadosLista[(i-1)];
+          document.getElementById('ProdutosInf').value = dadosLista[(i-1)];
           dadosLista.splice(dadosLista[i-1], 1);
     
   }
-
+    /*função para excluir produtos*/
      function Excluir(i){
          dadosLista.splice((i-1), 1);
          document.getElementById('tabela').deleteRow(i);
