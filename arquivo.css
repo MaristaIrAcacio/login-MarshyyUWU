@@ -76,3 +76,21 @@ button:hover {
 
 #escrita{
     color:rgb(155, 151, 151)}
+
+h2{  
+    font-size: 50px;
+     text-align:left;
+    color:rgb(202, 199, 221);
+    transition: .1s;
+    text-align: center;
+    font-family: Candara;
+}
+
+p{  
+    font-size: 50px;
+     text-align:left;
+    color:rgb(202, 199, 221);
+    transition: .1s;
+    text-align: center;
+    font-family: Candara;
+}
